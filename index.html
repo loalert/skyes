@@ -3,57 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Skye</title>
+    <title>Skye - Boutique Officielle</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
+    <!-- Cookie Banner -->
+    <div class="cookie-banner">
+        <p>Ce site utilise des cookies pour améliorer votre expérience. <a href="#">Politique de confidentialité</a></p>
+        <button id="accept-cookies">Accepter</button>
+        <button id="decline-cookies">Décliner</button>
+    </div>
+
+    <!-- Header -->
     <header>
-        <div class="logo-container">
-            <img src="images/logo.png" alt="Skye Logo" class="logo-img">
-            <h1>Skye</h1>
+        <div class="logo">
+            <img src="images/logo.png" alt="Skye Logo">
         </div>
         <nav>
-            <ul class="nav-menu">
+            <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="shop.html">Boutique</a></li>
-                <li><a href="stock.html">Stock</a></li>
                 <li><a href="about.html">À Propos</a></li>
-                <li><a href="contact.html">Contactez-Nous</a></li>
-                <li><a href="cart.html">Panier</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Panier (0)</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <h2>Bienvenue chez Skye</h2>
-            <p>Explorez la nouvelle collection de mode.</p>
-            <a href="shop.html" class="btn">Découvrir la Boutique</a>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop>
+            <source src="images/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay">
+            <h1>Bienvenue chez Skye</h1>
+            <p>Découvrez notre collection exclusive de mode urbaine.</p>
+            <a href="shop.html" class="btn">Voir la Boutique</a>
+        </div>
+    </section>
 
-        <!-- Featured Products Section -->
-        <section class="featured">
-            <h2>Produits Vedettes</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-image"></div>
-                    <h3>Produit 1</h3>
-                    <p>€100</p>
-                    <a href="product.html" class="btn">Voir Produit</a>
-                </div>
-                <div class="product-card">
-                    <div class="product-image"></div>
-                    <h3>Produit 2</h3>
-                    <p>€120</p>
-                    <a href="product.html" class="btn">Voir Produit</a>
-                </div>
+    <!-- New Arrivals Section -->
+    <section class="new-arrivals">
+        <h2>Nouveautés</h2>
+        <div class="products-container">
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Produit 1">
+                <h3>Produit 1</h3>
+                <p>€99.99</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
             </div>
-        </section>
-    </main>
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Produit 2">
+                <h3>Produit 2</h3>
+                <p>€89.99</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+            <div class="product-card">
+                <img src="images/product3.jpg" alt="Produit 3">
+                <h3>Produit 3</h3>
+                <p>€79.99</p>
+                <button class="add-to-cart">Ajouter au Panier</button>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Skye. Tous droits réservés.</p>
-    </footer>
-</body>
-</html>
+        <ul>
+            <li><a href="size-guide.html">Guide d
